@@ -1,9 +1,16 @@
+import Header from "./components/Header";
+import Card from  "./components/Card";
+
+import "./scss/app.scss";
+import data from "./data"
+
 
 function App() {
   return (
-    <div >
-      <h1>React App</h1>
-    </div>
+   <>
+   <Header/>
+   <Card data = {data} />
+   </>
   );
 }
 
