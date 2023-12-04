@@ -1,55 +1,21 @@
-import { useState } from "react"
-import CardStyled from  "../scss/card.module.scss"
 
+import CardStyled from "../scss/card.module.scss";
+import data from "../data";
+import Item from "./İtem";
 
-
-
-const Card = ({data}) => {
-const [click,setClick] = useState(false)
-if(click){
-
-  return (
-<main>
+const Card = () => {
  
-{data.map((less)=>(
-
-  <p>{less.hour}</p>
-  
-
-))}
-
-</main>
-  
-
-
-  )
-}
-
-
-
   return (
-    <main>
-{data.map((lesson,index)=>(
+    <div className={CardStyled["card-container"]}>
+      {/* <div className="stripped"></div> */}
 
+      <div className={CardStyled.cards}>
+        {data.map((language, name) => (
+          <Item language={language} key={name} />
+        ))}
+      </div>
+    </div>
+  );
+};
 
-<div key={lesson.id} className={CardStyled.container}>
-
-<img src={lesson.image} alt=""  className= {CardStyled.img}/>
-
-<button className={CardStyled["btn"]} >{lesson.name}
-
-</button>
-
-
-</div>
-
-
-
-))}
-
-
-    </main>
-  )
-}
-
-export default Card
+export default Card;

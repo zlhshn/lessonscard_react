@@ -1,48 +1,59 @@
+@import "./variables";
 
-main{
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem;
-    gap: 3rem;
-
-    
+.card-container {
+  border-radius: 20px;
+  width: 700px;
+  height: auto;
+  background-color: rgb(41, 40, 40);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem auto;
+  padding: 1rem;
 }
 
-.container{
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 3.3rem;
 
-// border: 2px solid gray;
-border-radius: 20px;
-width: 200px;
-height: 200px;
-padding: 1rem;
-background-color: antiquewhite;
-
-
-
-}
-
-
-.img{
-
-    width: 100px;
-    height: 100px;
-    margin-top: 1rem;
 }
 
 
-.btn{
+@media screen  and (max-width:900px) {
+    .card-container{
 
-    font-weight: 600;
-    margin: 40px 30px;
-    border: px solid gray;
-    border-radius: 10px;
-    padding: .6rem;
-    display: inline-block;
-    background-color: rgb(143, 106, 106);
-    color: white;
-    
-    
+        width: 600px;
     }
+
+
+
+   
+}
+
+@media screen  and (max-width:600px) {
+    .card-container{
+
+        width: 400px;
+    }
+
+
+
+   
+}
+
+
+@media screen  and (max-width:400px) {
+    .card-container{
+
+        width: 300px;
+    }
+
+
+
+   
+}
