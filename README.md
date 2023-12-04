@@ -1,10 +1,11 @@
 ## Description
 Basic project I developed while learning React,useState
 
-[Live](https://lessonscard-react.vercel.app)
+[Live](https://lessonscard-react-iuaht931s-zlhshns-projects.vercel.app/)
 
 
 ## How does my project look
+![lesson](./lesson.gif)
 
 ## Technologies
 * React.js
@@ -15,5 +16,6 @@ Basic project I developed while learning React,useState
 ## How to install and run
 In the project directory, you can run:
 
-### `npm install`  
-### `npm start`
+### `npm install`    `npm start`
+OR
+### `yarn install`    `yarn start`
