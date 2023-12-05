@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import ItemStyled from "../scss/item.module.scss";
 
-const İtem = ({ language }) => {
-  const { name, hour, image } = language;
+const İtem = ({ lesson }) => {
+  const { name, hour, image } = lesson;
   const [toggle, setToggle] = useState(true);
   const handleCardShow = (e) => {
     setToggle(!toggle);

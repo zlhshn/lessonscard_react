@@ -10,14 +10,40 @@
   background-color: rgb(41, 40, 40);
   margin: 4rem auto;
   padding: 1rem;
+  flex-direction: column;
+
+
+  .size{
+
+    color:white;
+    font-size: 2rem;
+
+  }
+
+
+
+  .cards {
+    @include flex(center, center);
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 3.3rem;
+  }
+
+
+
+  button{
+    
+    padding: .5rem  4rem;
+    border-radius: .8rem;
+    border: none;
+    background-color: rgba(248, 133, 50, 0.836);
+    color: white;
+    font-size: 1.4rem;
+  }
+
 }
 
-.cards {
-  @include flex(center, center);
-  gap: 3rem;
-  flex-wrap: wrap;
-  padding: 3.3rem;
-}
+
 
 @include media-lg {
   .card-container {
