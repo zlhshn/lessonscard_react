@@ -1,7 +1,7 @@
 ## Description
 Basic project I developed while learning React,useState
 
-[Live](https://lessonscard-react-iuaht931s-zlhshns-projects.vercel.app/)
+[Live](https://lessonscard-react-zlhshns-projects.vercel.app/)
 
 
 ## How does my project look
