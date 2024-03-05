@@ -1,5 +1,5 @@
 ## Description
-Basic project I developed while learning React,useState
+Basic project I developed while learning React(useState)
 
 [Live](https://lessonscard-react-zlhshns-projects.vercel.app/)
 
